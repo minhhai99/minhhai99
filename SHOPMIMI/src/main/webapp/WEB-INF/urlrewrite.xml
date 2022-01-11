@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+	<rule>
+		<from>/danh-sach-san-pham/(.+)-([0-9]+).html$</from>
+		<to>/product-detail?id=$2</to>
+	</rule>
+	<rule>
+		<from>/danh-sach-san-pham$</from>
+		<to>/list-product</to>
+	</rule>
+	<rule>
+		<from>/danh-muc/muc-gia-([0-9]+).html$</from>
+		<to>/cat/money?id=$1</to>
+	</rule>
+	<rule>
+		<from>/(.+)-([0-9]+)$</from>
+		<to>/type?id=$2</to>
+	</rule>
+	<rule>
+		<from>/danh-muc$</from>
+		<to>/catType</to>
+	</rule>
+	<rule>
+		<from>/y-nghia-hoa/(.+)-([0-9]+).html$</from>
+		<to>/meaning/detail?id=$2</to>
+	</rule>
+	 <rule>
+		<from>/y-nghia-hoa$</from>
+		<to>/meaning</to>
+	</rule>
+	<rule>
+		<from>/dang-nhap-([0-9]+)$</from>
+		<to>/loginn?err=$1</to>
+	</rule>
+	<rule>
+		<from>/dang-nhap$</from>
+		<to>/loginn</to>
+	</rule> 
+	
+	<rule>
+		<from>/dang-ky-tai-khoan$</from>
+		<to>/register</to>
+	</rule>
+	<rule>
+		<from>/lien-he$</from>
+		<to>/contact</to>
+	</rule>
+</urlrewrite>
+
